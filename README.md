@@ -1,9 +1,8 @@
 
-```markdown
 # Audio-Based Load Control Setup Guide
 
 This guide provides step-by-step instructions for setting up your Raspberry Pi to run the Audio-Based Load Control project. The setup involves configuring locale settings, updating system packages, installing necessary software, and setting up a Python virtual environment.
-```
+
 ```bash
 sudo locale-gen en_US.UTF-8
 sudo update-locale LANG=en_US.UTF-8
