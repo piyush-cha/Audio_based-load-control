@@ -1,48 +1,53 @@
 
+This guide provides step-by-step instructions for setting up your Raspberry Pi to run the Audio-Based Load Control project. The setup involves configuring locale settings, updating system packages, installing necessary software, and setting up a Python virtual environment.
 
 ```markdown
 # Audio-Based Load Control Setup Guide
 
-This guide provides step-by-step instructions for setting up your Raspberry Pi to run the Audio-Based Load Control project. The setup involves configuring locale settings, updating system packages, installing necessary software, and setting up a Python virtual environment.
+1. **Set Locale**: Configure the locale settings to ensure proper language support:
 
-1. **Set Locale**: Configure the locale settings to ensure proper language support.
     ```bash
     sudo locale-gen en_US.UTF-8
     sudo update-locale LANG=en_US.UTF-8
     sudo reboot
     ```
 
-2. **Update System Packages**: After rebooting, update the package lists and upgrade installed packages.
+2. **Update System Packages**: After rebooting, update the package lists and upgrade installed packages:
+
     ```bash
     sudo apt update
     sudo apt upgrade -y
     ```
 
-3. **Upgrade Thonny**: Upgrade Thonny, the Python IDE, to the latest version.
+3. **Upgrade Thonny**: Upgrade Thonny, the Python IDE, to the latest version:
     ```bash
     sudo apt upgrade thonny
     pip install --upgrade pip
     pip install --upgrade thonny
     ```
 
-4. **Install Full Python 3**: Ensure that the full Python 3 package is installed.
+4. **Install Full Python 3**: Ensure that the full Python 3 package is installed:
+
     ```bash
     sudo apt install python3-full
     ```
 
-5. **Set Up Python Virtual Environment**: Create and activate a Python virtual environment for your project.
+5. **Set Up Python Virtual Environment**: Create and activate a Python virtual environment for your project:
+
     ```bash
     python3 -m venv myenv
     source myenv/bin/activate
     ```
 
 6. **Install Required Python Packages**: Upgrade `pip` and install the necessary Python packages.
+
     ```bash
     pip install --upgrade pip
     pip install SpeechRecognition
     ```
 
-7. **Test Speech Recognition Installation**: Run a simple test to ensure that the SpeechRecognition package is installed correctly.
+7. **Test Speech Recognition Installation**: Run a simple test to ensure that the SpeechRecognition package is installed correctly:
+
     ```bash
     python -m speech_recognition
     ```
@@ -52,15 +57,15 @@ This guide provides step-by-step instructions for setting up your Raspberry Pi t
     deactivate
     ```
 
-### Summary of Commands
-
-For convenience, here are all the commands consolidated:
+# Summary of Commands: 
+# For convenience, here are all the commands consolidated:
 ```bash
 sudo locale-gen en_US.UTF-8
 sudo update-locale LANG=en_US.UTF-8
 sudo reboot
-
+```
 # After rebooting
+ ```bash
 sudo apt update
 sudo apt upgrade -y
 sudo apt upgrade thonny
@@ -70,7 +75,9 @@ sudo apt update
 sudo apt install python3-full
 python3 -m venv myenv
 source myenv/bin/activate
+```
 
+ ```bash
 pip install --upgrade pip
 pip install SpeechRecognition
 python -m speech_recognition
