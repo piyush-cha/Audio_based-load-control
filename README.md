@@ -23,7 +23,7 @@ pip install --upgrade pip
 pip install SpeechRecognition
 python -m speech_recognition
 ```
-#If you done with your work 
+# If you done with your work 
 ```bash
 deactivate
 ```
