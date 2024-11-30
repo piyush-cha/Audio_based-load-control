@@ -102,7 +102,3 @@ deactivate
 
 For any questions or support, please contact [email](mailto:pchafle903@gmail.com).
 
-
-
-# Thank you for setting up the Audio-Based Load Control project!
-
